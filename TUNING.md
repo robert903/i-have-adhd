@@ -96,7 +96,12 @@ Done:
 - `~/.claude/CLAUDE.md` — writing section replaced with a 4-line pointer. AdLoop section untouched.
   Backup at `~/.claude/CLAUDE.md.bak-20260909`.
 
-Robert's one step: run `/output-style i-have-adhd`.
+- `~/.claude/settings.json` — `"outputStyle": "i-have-adhd"` inserted as a top-level key, so the
+  style applies in every folder rather than only the project where `/output-style` was run.
+  Inserted as a text edit, not a JSON rewrite: all 228 permission entries and every other key
+  are byte-identical. Backup at `~/.claude/settings.json.bak-20260909`.
+
+Takes effect in new sessions — this one keeps its current style until restart.
 
 ### Rule provenance
 
